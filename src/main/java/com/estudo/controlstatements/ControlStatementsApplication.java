@@ -1,5 +1,6 @@
 package com.estudo.controlstatements;
 
+import com.estudo.controlstatements.forloopstm.ForLoopStm;
 import com.estudo.controlstatements.switchstm.SwitchStm;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -13,6 +14,9 @@ public class ControlStatementsApplication {
 
 		SwitchStm switchStm = context.getBean(SwitchStm.class);
 		switchStm.execute();
+
+		ForLoopStm forLoopStm = context.getBean(ForLoopStm.class);
+		forLoopStm.execute();
 	}
 
 }
